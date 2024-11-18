@@ -1,0 +1,76 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eb7072; /* Color 2 */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Títulos */
+.destaque {
+    color: white; /* Mantém a cor branca */
+    text-align: center;
+}
+
+h1 {
+    color: #5f545c; /* Color 1 */
+    text-align: center;
+}
+
+h2 {
+    color: #f5ba90; /* Color 3 */
+    text-align: center;
+}
+
+/* Texto */
+p {
+    color: #f5e2b8; /* Color 4 */
+    text-align: center;
+    margin: 10px 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    color: #a2caa5; /* Color 5 */
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Imagens de fundo */
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #5f545c; /* Color 1 */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: #f5e2b8; /* Color 4 */
+}
+
+.inov{
+    color: #a2caa5;
+}
+
+.home{
+    color: #a2caa5;
+}
