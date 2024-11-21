@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #eb7072; /* Color 2 */
+    background-color: #eb7072; 
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -21,23 +21,23 @@ nav a {
 
 /* Títulos */
 .destaque {
-    color: white; /* Mantém a cor branca */
+    color: white; 
     text-align: center;
 }
 
 h1 {
-    color: #5f545c; /* Color 1 */
+    color: #5f545c; 
     text-align: center;
 }
 
 h2 {
-    color: #f5ba90; /* Color 3 */
+    color: #f5ba90; 
     text-align: center;
 }
 
-/* Texto */
+
 p {
-    color: #f5e2b8; /* Color 4 */
+    color: #f5e2b8; 
     text-align: center;
     margin: 10px 20px;
 }
@@ -48,16 +48,12 @@ ul {
 }
 
 li {
-    color: #a2caa5; /* Color 5 */
+    color: #a2caa5; 
     text-align: center;
     margin: 10px 0;
 }
 
-/* Imagens de fundo */
-body {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 footer {
     background-color: #5f545c; /* Color 1 */
@@ -72,5 +68,28 @@ footer {
 }
 
 .home{
-    color: #a2caa5;
+    color: cadetblue;
+}
+
+#minha-imagem {
+    display: block; /* Permite o uso de margin para centralização */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border-radius: 900px; /* Torna as bordas redondas */
+    max-width: 350px; /* Define um tamanho máximo (opcional) */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease; /* Suaviza a transformação */
+}
+
+#icones {
+    display: block;            /* Faz a imagem ser tratada como um bloco */
+    margin-left: auto;         /* Margem automática à esquerda */
+    margin-right: auto;        /* Margem automática à direita */
+    border-radius: 900px;      /* Bordas redondas */
+    max-width: 10%;          /* Tamanho máximo da imagem */
+    height: auto;              /* Mantém a proporção */
+    transition: transform 0.3s ease; /* Suaviza a transformação */
+}
+
+#minha-imagem:hover {
+    transform: translateY(-10px); /* Move a imagem 10px para cima */
 }
