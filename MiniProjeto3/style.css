@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #95c5ce;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #64939d;
+  color: white;
+  height: 100vh;
+  padding: 2rem 1rem;
+  position: fixed;
+}
+
+.add-task-button {
+  background-color: #030d4f;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.add-task-button:hover {
+  background-color: #64939d;
+}
+
+.container {
+  display: flex;
+  margin-top: 80px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid #e7edea;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #64939d;
+  color: white;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 2rem;
+  flex: 1;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  padding: 1rem;
+  width: 200px;
+  height: 200px;
+  background-color: #e7f7fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.task:hover {
+  transform: scale(1.05);
+}
+
+.high-priority {
+  background-color: #fb0c06;
+  color: white;
+}
+
+.medium-priority {
+  background-color: #ffc52c;
+  color: white;
+}
+
+.low-priority {
+  background-color: #6ee074;
+  color: white;
+}
+
+.completed {
+  background-color: #cfd8dc;
+  color: #333;
+  text-decoration: line-through;
+}

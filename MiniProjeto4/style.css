@@ -1,0 +1,270 @@
+
+.color1 { color: #fcfdeb; }  /* Cor de fundo suave */
+.color2 { color: #e3cebd; }  /* Cor de destaque suave */
+.color3 { color: #c1a2a0; }  /* Cor neutra */
+.color4 { color: #725b75; }  /* Cor de texto */
+.color5 { color: #322030; }  /* Cor principal de destaque */
+
+/* Estilo geral do corpo */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fcfdeb; /* Cor de fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evitar rolagem horizontal */
+    overflow-y: auto;  /* Permitir rolagem vertical quando necessário */
+}
+
+/* Tela de escolha */
+.choice-screen {
+    text-align: center;
+    background-color: #e3cebd; /* Cor de fundo suave */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+}
+
+.choice-screen h2 {
+    font-size: 1.8em;
+    color: #322030; /* Cor principal */
+    margin-bottom: 10px;
+}
+
+.choice-screen p {
+    color: #725b75; /* Cor de texto */
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #725b75; /* Cor de botão */
+    color: #fcfdeb; /* Cor de texto */
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c1a2a0; /* Cor de hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Formulário de Cadastro/Login */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Garantir espaçamento inferior */
+}
+
+h2 {
+    text-align: center;
+    color: #322030; /* Cor principal */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    color: #725b75; /* Cor de texto */
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c1a2a0; /* Cor de borda */
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #fcfdeb; /* Cor de fundo dos inputs */
+    color: #322030; /* Cor de texto nos inputs */
+}
+
+input:focus {
+    border-color: #725b75; /* Cor de borda ao focar */
+    outline: none;
+}
+
+/* Mensagem de erro */
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.error-icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+/* Tela de Boas-vindas */
+.welcome-screen {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.welcome-screen h2 {
+    color: #322030; /* Cor principal */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.welcome-screen p {
+    color: #725b75; /* Cor de texto */
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.welcome-screen button {
+    background-color: #c1a2a0; /* Cor de botão */
+    color: #fcfdeb; /* Cor de texto */
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-screen button:hover {
+    background-color: #725b75; /* Cor de hover */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    /* Alterações para telas menores */
+    .choice-screen, .form-container, .welcome-screen {
+        padding: 20px;
+    }
+
+    .form-container, .welcome-screen {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input, button {
+        font-size: 1em;
+    }
+
+    .form-container {
+        margin-bottom: 15px; /* Espaçamento inferior para telas pequenas */
+    }
+}
+
+/* Estilo para animações */
+.choice-screen, .form-container, .welcome-screen {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilo geral */
+.form-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: relative;
+    top: 50%;
+    left: 160px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #725b75;
+}
+
+.toggle-password-cad {
+    position: relative;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #725b75;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Estilo para telas muito pequenas */
+@media (max-width: 480px) {
+    .form-container, .choice-screen, .welcome-screen {
+        padding: 10px; /* Menor padding para telas muito pequenas */
+    }
+
+    .form-container, .welcome-screen {
+        max-width: 100%; /* Largura total para o formulário */
+    }
+
+    input, button {
+        font-size: 0.9em; /* Ajuste na fonte para telas muito pequenas */
+    }
+
+    h2 {
+        font-size: 1.4em; /* Ajustar tamanho do título */
+    }
+
+    .form-group {
+        margin-bottom: 10px; /* Menor espaço entre os campos */
+    }
+}

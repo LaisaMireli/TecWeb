@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Interativo com Avatar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="choice-screen" id="choiceScreen">
+        <h2>Bem-vindo!</h2>
+        <p>Escolha uma opção para continuar:</p>
+        <button id="registerButton">Cadastrar</button>
+        <button id="loginButton">Login</button>
+    </div>
+
+    
+    <div class="form-container" id="formContainer" style="display: none;">
+        <h2>Cadastro de Usuário</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha: <span class="toggle-password-cad" id="togglePassword">👁️</span></label>
+                <input type="password" id="password" name="password" required>
+               
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirme sua senha: <span class="toggle-password-cad" id="togglePassword">👁️</span></label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                
+            </div>
+            <div class="form-group">
+                <label for="avatar">Selecione um avatar:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/*">
+            </div>
+            <button type="submit">Registrar</button>
+            <button type="button" id="clearFormButton">Limpar</button>
+            <button type="button" id="backToChoiceButton">Voltar</button>
+        </form>
+    </div>
+
+   
+    <div class="form-container" id="loginContainer" style="display: none;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Senha:  <span class="toggle-password" id="toggleLoginPassword">👁️</span></label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+               
+            </div>
+            <div id="loginErrorMessage" class="error-message" style="display: none;">
+                Email ou senha inválidos!
+            </div>
+            <button type="submit">Entrar</button>
+            <button type="button" id="backToChoiceButtonLogin">Voltar</button>
+        </form>
+    </div>
+
+    
+    <div class="welcome-screen" id="welcomeScreen" style="display: none;">
+        <h2>Bem-vindo, <span id="userName"></span>!</h2>
+        <img id="userAvatar" src="" alt="Avatar do usuário" class="avatar">
+        <p>Você está logado com sucesso.</p>
+        <button id="logoutButton">Sair</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
